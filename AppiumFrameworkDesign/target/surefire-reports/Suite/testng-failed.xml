@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.mehrdad.TestUtils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="End to End Framework Test(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.mehrdad.eCommerce_tc_4_Hybrid">
+        <methods>
+          <include name="FillForm"/>
+          <include name="ConfigureAppium"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.mehrdad.eCommerce_tc_4_Hybrid -->
+    </classes>
+  </test> <!-- End to End Framework Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

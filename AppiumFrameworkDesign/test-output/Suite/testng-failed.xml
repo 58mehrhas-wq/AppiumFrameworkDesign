@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.mehrdad.TestUtils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="End to End Framework Test(failed)">
+    <classes>
+      <class name="org.mehrdad.eCommerce_tc_4_Hybrid">
+        <methods>
+          <include name="ConfigureAppium"/>
+          <include name="FillForm"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.mehrdad.eCommerce_tc_4_Hybrid -->
+    </classes>
+  </test> <!-- End to End Framework Test(failed) -->
+  <test thread-count="5" name="Error Validations Test(failed)">
+    <classes>
+      <class name="org.mehrdad.eCommerce_tc_1">
+        <methods>
+          <include name="FillForm_ErrorValidation"/>
+          <include name="ConfigureAppium"/>
+          <include name="FillForm_PositiveFlow"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.mehrdad.eCommerce_tc_1 -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+  <test thread-count="5" name="IOS Test(failed)">
+    <classes>
+      <class name="org.mehrdad.IOSBasics">
+        <methods>
+          <include name="IOSBasicTest"/>
+          <include name="tearDown"/>
+          <include name="ConfigureAppium"/>
+        </methods>
+      </class> <!-- org.mehrdad.IOSBasics -->
+    </classes>
+  </test> <!-- IOS Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
